@@ -1,0 +1,327 @@
+/* style.css */
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/*TOP BAR STYLING*/
+.top-bar {
+  background-color: #5491f4;
+  font-size: 0.9rem;
+}
+
+.top-contact span,
+.top-social a {
+  color: white;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.top-social a:hover {
+  opacity: 0.8;
+}
+
+
+.navbar-brand {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+/* Hero Slide Styles */
+.hero-slide {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero-slide::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(23, 22, 22, 0.6);
+  z-index: 1;
+}
+
+/* Text Content */
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: center;
+  color: #fff;
+  max-width: 700px;
+  width: 100%;
+}
+
+.hero-subtitle {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  animation: fadeIn 1s ease forwards;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 1rem;
+  animation: slideUp 1.2s ease-out forwards;
+}
+
+.hero-text {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  animation: fadeIn 1.5s ease forwards;
+}
+
+/* Buttons */
+.carousel-caption .btn {
+  font-size: 1rem;
+  padding: 0.7rem 1.5rem;
+  font-weight: 500;
+  border-radius: 30px;
+  
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-text {
+    font-size: 1rem;
+  }
+
+  .carousel-caption {
+    padding: 0 20px;
+  }
+
+  .carousel-caption .btn {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+/* Timing Delays */
+.delay-1 { animation-delay: 0.5s; }
+.delay-2 { animation-delay: 1s; }
+.delay-3 { animation-delay: 1.5s; }
+
+/* Typing Effect (for Slide 1) */
+.typing-text {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  animation: typingEffect 4s steps(40, end) forwards;
+  border-right: 2px solid #fff;
+  opacity: 1;
+}
+
+@keyframes typingEffect {
+  from {
+    width: 0;
+    opacity: 1;
+  }
+  to {
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+/* Slide from Top (for Slide 2) */
+.slide-top {
+  transform: translateY(-40px);
+  opacity: 0;
+  animation: slideTop 1s ease forwards;
+}
+
+@keyframes slideTop {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Slide from Bottom (for Slide 3) */
+.slide-bottom {
+  transform: translateY(40px);
+  opacity: 0;
+  animation: slideBottom 1s ease forwards;
+}
+
+@keyframes slideBottom {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Make hero carousel positioned relative for overlap context */
+#heroCarousel {
+  position: relative;
+  z-index: 1;
+}
+
+/* Ensure card section stacks above */
+.overlap-card-section {
+  z-index: 5;
+  position: relative;
+}
+
+/* Fix for mobile view */
+@media (max-width: 768px) {
+  .overlap-card-section {
+    margin-top: 0 !important;
+  }
+}
+
+/*SECTION START*/
+.section-bg {
+    background-color: #fff;
+    position: relative;
+    z-index: 1;
+  }
+
+  .border-dashed {
+    border: 2px dashed #ddd;
+  }
+ 
+
+  .left-bg-shape {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25%;
+    height: 90%;
+    background-color: #abbbdd;
+    z-index: 0;
+    border-top-right-radius: 150px;
+    border-bottom-right-radius: 150px;
+  }
+
+  .right-circle-shape {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 25%;
+    height: 140px;
+    background-color: #abbbdd;
+    border-top-left-radius: 100% 100%;
+    z-index: 0;
+  }
+
+  @media (max-width: 768px) {
+    .left-bg-shape {
+      width: 100%;
+      height: 180px;
+      border-radius: 0;
+    }
+
+    .right-circle-shape {
+      display: none;
+    }
+  }
+
+  /*Featured Project section Styling*/
+
+ .featured-project {
+  background: url('/images/education2.jpg') no-repeat center center/cover;
+  position: relative;
+  height: 600px;
+  z-index: 1;
+}
+
+.featured-project::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5); /* dark overlay */
+  z-index: 0;
+}
+
+.start-35 {
+  left: 35%;
+}
+
+@media (max-width: 768px) {
+  .start-35 {
+    left: 50%;
+  }
+}
+
+/*Volunteer Card sec styling*/
+
+.volunteer-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-items: center;
+}
+
+.volunteer-card {
+  width: 250px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.volunteer-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*FOOTER STYLING*/
+
+.footer-link {
+  color: #ccc;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #1c70f7;
+  text-decoration: underline;
+}
+

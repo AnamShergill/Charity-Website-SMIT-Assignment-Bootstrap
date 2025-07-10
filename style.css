@@ -407,47 +407,102 @@ body {
 
     /*  Upcoming Events Section  */
 
-     .event-card {
-      display: flex;
-      gap: 5px;
-      background-color: #f8f9fa;
-      padding: 20px;
-      width: 50px !important;
-    border-radius: 10px;
-      height: 250px;
-      align-items: center;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    .event-content h5 {
-      font-weight: bold;
-    }
-    .event-content small {
-      color: gray;
-    }
-    .carousel-control-prev-icon,
-    .carousel-control-next-icon {
-      background-color: #5677ee;
-      border-radius: 50%;
-      padding: 10px;
-    }
-    .btn-read {
-      background-color: #5677ee;
-      border: none;
-      padding: 10px 20px;
-      color: white;
-      font-weight: bold;
-      border-radius: 5px;
+    .events-section {
+      padding: 60px 0;
     }
 
-    
-    .carousal-item {
-      height: 100vh;
-      min-height: 500px;
-      background-size: cover;
-      background-position: center;
-      position: relative;
-      z-index: 1;
+    .events-section h2 {
+      font-weight: 700;
     }
+
+    .underline {
+      width: 60px;
+      height: 3px;
+      background-color: #007bff;
+      margin: 10px auto;
+    }
+
+    .event-card {
+      border: 1px dashed #ccc;
+      background-color: #fff;
+      display: flex;
+      flex-direction: row;
+      height: 100%;
+       max-width: 500px;  /* ✅ NEW: limits card width */
+  margin: auto; 
+    }
+
+    .event-card img {
+      width: 250px;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .event-card .text {
+      padding: 20px;
+      flex: 1;
+      text-align: left;
+    }
+
+    .event-card .text h5 {
+      font-weight: 600;
+    }
+
+    .event-card .text small {
+      display: block;
+      color: gray;
+      font-size: 0.9rem;
+    }
+
+    .event-card .text p {
+      margin-top: 10px;
+    }
+
+    .event-card .text .btn {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 5px 15px;
+    }
+
+    .event-card .text .btn:hover {
+      background-color: #0056b3;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-color: #007bff;
+      border-radius: 50%;
+      padding: 10px;
+
+    }
+
+    .carousel-control-prev,
+.carousel-control-next {
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #007bff;
+  border-radius: 50%;
+  opacity: 1;
+}
+
+.carousel-control-prev {
+  left: -60px; 
+}
+
+.carousel-control-next {
+  right: -60px;
+}
+
+@media (max-width: 768px) {
+  .carousel-control-prev,
+  .carousel-control-next {
+    display: none; 
+  }
+}
+
 
 
 

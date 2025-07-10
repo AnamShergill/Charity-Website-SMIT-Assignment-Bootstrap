@@ -509,48 +509,94 @@ needs more helping!</p>
   </section>
 
  <!------UpComing Events Section------>
-<section>
-  <div class="container-xxl py-5">
-  <div id="event" class="container-event">
-    <h3 class="fw-bold text-center ">Upcoming Events</h3>
-    <div class="fw-bold display-2 text-warning px-3 text-center"></div>
-     <p class="text-center mb-2 fw-semibold mb-5">Help today because tomorrow you may be the one who<br>needs more helping!</p>
-        <div class="d-flex justify-content-center">
-     <div class="d-flex align-items-center">
-           <a class="page-link p-3 bg-warning text-muted"><i class="fa-solid fa-arrow-left"></i></a> 
-        </div>
-        <div class="about-card col-md-4 mb-4 d-flex gap-2" style="width: 50%; height: 400px !important;">
-<div>
-          <img src="./images/events-1.jpg" alt="history" class="card-img-top" style="width: 350px; margin-right: 20px; height: 400px !important; ">
-        </div>
-          <div class="about-card-body d-flex-col align-items-center">
-            <h5 class="card-title fw-bold fs-2">Let's talk about the <br>poor children.</h5>
-            <a href="#" class="text-muted">started 12:00pm <br> Grand mall, Dubai 2100.</a>
-            <p class="card-text text-muted fs-5 fw-semibold py-2">
-              The secret to happiness lies in <br> helping others.YOU can make<br> in the lives of the poor.
-            </p>
-            <button class="btn read-more px-5 py-3 ">Read More</button>
+<section class="events-section text-center">
+  <div class="container-xxl"  style="max-width: 1100px;">
+    <h2>Upcoming Events</h2>
+    <div class="underline"></div>
+    <p class="mb-5">Help today because tomorrow you may be the one who needs more helping!</p>
+
+    <div id="eventCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <!-- Carousel Slide 1 -->
+        <div class="carousel-item active">
+          <div class="row justify-content-center">
+            <!-- Card 1 -->
+            <div class="col-md-6 mb-4 ">
+              <div class="event-card">
+                <img src="/images/events-1.jpg" alt="Event 1">
+                <div class="text">
+                  <h5>Let’s talk about the poor children.</h5>
+                  <small>STARTED ON: 12:00 PM</small>
+                  <small>GRAND MAHAL, DUBAI 2100</small>
+                  <p>Help today because tomorrow you may be the one who needs more helping!</p>
+                  <a href="#" class="btn btn-sm">Read More</a>
+                </div>
+              </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-md-6 mb-4">
+              <div class="event-card">
+                <img src="/images/events-2.jpg" alt="Event 2">
+                <div class="text">
+                  <h5>Insure clean water to everyone in Africa.</h5>
+                  <small>STARTED ON: 12:00 PM</small>
+                  <small>GRAND MAHAL, DUBAI 2100</small>
+                  <p>Help today because tomorrow you may be the one who needs more helping!</p>
+                  <a href="#" class="btn btn-sm">Read More</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-  <div class="about-card col-md-4 mb-4 d-flex gap-2" style="width: 50%; height: 400px !important;">
-        <div>
-          <img src="./images/events-2.jpg" alt="history" class="card-img-top" style="width: 350px; margin-right: 20px; height: 400px !important; ">
-        </div>
-          <div class="about-card-body d-flex-col align-items-center">
-            <h5 class="card-title fw-bold">Let's talk about the <br>poor children.</h5>
-            <a href="#" class="text-muted">started 12:00pm <br> Grand mall, Dubai 2100.</a>
-       <p class="card-text text-muted fs-5 fw-semibold py-2">
-              The secret to happiness lies in helping others. <br> YOU can make in the lives of the poor.
-            </p>
-            <button class="btn read-more px-5 py-3 ">Read More</button>
+
+        <!-- Carousel Slide 2 (Optional for more cards) -->
+        <div class="carousel-item">
+          <div class="row justify-content-center">
+            <!-- Card 3 -->
+            <div class="col-md-6 mb-4">
+              <div class="event-card">
+                <img src="/images/education.webp" alt="Event 3">
+                <div class="text">
+                  <h5>Support local education programs.</h5>
+                  <small>STARTED ON: 1:00 PM</small>
+                  <small>COMMUNITY HALL, NAIROBI</small>
+                  <p>Education is the most powerful tool to change the world.</p>
+                  <a href="#" class="btn btn-sm">Read More</a>
+                </div>
+              </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="col-md-6 mb-4">
+              <div class="event-card">
+                <img src="/images/hunger.jpg" alt="Event 4">
+                <div class="text">
+                  <h5>Food drive for rural families.</h5>
+                  <small>STARTED ON: 2:00 PM</small>
+                  <small>CHARITY HUB, GHANA</small>
+                  <p>Join hands in delivering essential food to those in need.</p>
+                  <a href="#" class="btn btn-sm">Read More</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="d-flex align-items-center">
-            <a class="page-link p-3 bg-warning text-muted" href="#"><i class="fa-solid fa-arrow-right"></i></a>
-        </div>
+
       </div>
+
+      <!-- Navigation Arrows -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#eventCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#eventCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
     </div>
-    </section>
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
 
 
 

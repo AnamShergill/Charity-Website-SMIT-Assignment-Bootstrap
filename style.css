@@ -27,6 +27,22 @@ body {
   letter-spacing: 1px;
 }
 
+   @keyframes animate__slideInDown {
+  from { opacity: 0; transform: translateY(-50px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+   .navbar {
+    animation-name: animate__slideInDown;
+    animation-duration: 3s;
+    animation-iteration-count: initial;
+    animation-timing-function: ease-in;
+    animation-direction: alternate;
+    position: sticky;
+    top: 0;
+    right: 0;
+    z-index: 2;
+   }
+
 /* Hero Slide Styles */
 .hero-slide {
   height: 100vh;
@@ -268,29 +284,170 @@ body {
 
 /*Volunteer Card sec styling*/
 
-.volunteer-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  justify-items: center;
-}
-
-.volunteer-card {
-  width: 250px;
-  height: 200px;
+.volunteer-wrapper {
+  position: relative;
   overflow: hidden;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 80%; /* ✅ makes the image smaller */
+  margin: 0 auto; /* ✅ centers the image */
 }
 
-.volunteer-card img {
+.volunteer-wrapper img {
+  display: block;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
   border-radius: 8px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
+.volunteer-wrapper:hover img {
+  transform: scale(1.05);
+  box-shadow: 0px 30px 30px -15px rgba(0, 0, 0, 0.2);
+}
 
+.volunteer-overlay {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  transition: bottom 0.4s ease;
+}
+
+.volunteer-wrapper:hover .volunteer-overlay {
+  bottom: 0;
+}
+
+.volunteer-info {
+  color: rgb(90, 130, 238);
+  font-weight: bold;
+  text-align: center;
+}
+
+.volunteer-info span {
+  color: #fff;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+  .volu-left-bg-shape {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25%;
+    height: 60%;
+    background-color: #abbbdd;
+    z-index: 0;
+    border-top-right-radius: 120px;
+    border-bottom-right-radius: 90%;
+  }
+
+  .volu-right-circle-shape {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 35%;
+    height: 260px;
+    background-color: #abbbdd;
+    border-top-left-radius: 100% 100%;
+    z-index: 0;
+  }
+
+  @media (max-width: 768px) {
+    .left-bg-shape {
+      width: 100%;
+      height: 150px;
+      border-radius: 0;
+    }
+
+    .right-circle-shape {
+      display: none;
+    }
+  }
+
+   /*  Banner Section */
+
+    .counters-section {
+      background: url('/images/banner.jpeg') center center/cover no-repeat;
+      position: relative;
+      padding: 60px 0;
+      color: #f4f0f0;
+      height: 50vh;
+    }
+    .counters-section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.3); /* Dark overlay */
+    }
+    .counters-section .container {
+      position: relative;
+      z-index: 2;
+    }
+    .counter-number {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #2947da;
+    }
+    .counter-label {
+      font-size: 1.5rem;
+      margin-top: 0.5rem;
+      font-weight: bold;
+    }
+    .counter-icon {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    /*  Upcoming Events Section  */
+
+     .event-card {
+      display: flex;
+      gap: 5px;
+      background-color: #f8f9fa;
+      padding: 20px;
+      width: 50px !important;
+    border-radius: 10px;
+      height: 250px;
+      align-items: center;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .event-content h5 {
+      font-weight: bold;
+    }
+    .event-content small {
+      color: gray;
+    }
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-color: #5677ee;
+      border-radius: 50%;
+      padding: 10px;
+    }
+    .btn-read {
+      background-color: #5677ee;
+      border: none;
+      padding: 10px 20px;
+      color: white;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+
+    
+    .carousal-item {
+      height: 100vh;
+      min-height: 500px;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      z-index: 1;
+    }
 
 
 

@@ -41,7 +41,7 @@
 
 
   <!--NAVBAR START-->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark  shadow-sm animated">
   <div class="container" >
     <a class="navbar-brand fw-bold" href="#">Charitify</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
@@ -50,9 +50,12 @@
     <div class="collapse navbar-collapse" id="navMenu">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Causes</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="/about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="/causes.html">Causes</a></li>
+        <li class="nav-item"><a class="nav-link" href="/events.html">Event</a></li>
+        <li class="nav-item"><a class="nav-link" href="/pages.html">Pages</a></li>
+        <li class="nav-item"><a class="nav-link" href="/blog.html">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="/contact.html">Contact</a></li>
       </ul>
     </div>
   </div>
@@ -190,11 +193,12 @@
 </section>
 
 
-<section class="py-5 bg-body-secondary mt-5 ">
-  <div class="container-xxl">
-    <div class="row g-4">
-      <h1 style="text-align: center;">Recent Causes</h1>
-      <p style="text-align: center;">Help today because tomorrow you may be the one who<br>
+<section class="py-5 bg-body-secondary mt-5 position-relative">
+  <div class="container-xxl text-center mb-5">
+    <div class="row g-3">
+      <h2 class="fw-bold" >Recent Causes</h2>
+       <div class="mx-auto mb-2" style="width: 60px; height: 5px; background-color: #3284b4;"></div>
+      <p >Help today because tomorrow you may be the one who<br>
 needs more helping!</p>
 
       <!-- Card 1-->
@@ -329,7 +333,7 @@ needs more helping!</p>
     </div>
   </div>
 
-  <!-- Left Peach Background -->
+  <!-- Left Blue Background -->
   <div class="left-bg-shape"></div>
 
   <!-- Right Bottom Circle -->
@@ -393,59 +397,164 @@ needs more helping!</p>
 
 <!--VOLUNTEER CARD SECTION-->
 
-<section class="volunteers-section py-5 position-relative" style="background-color: #f7f7f7;">
-  <div class="container text-center mb-5">
-    <h2 class="fw-bold">Meet Our Volunteers</h2>
-    <div class="mx-auto mb-2" style="width: 60px; height: 3px; background-color: #f8b55b;"></div>
-    <p class="text-muted">Help today because tomorrow you may be the one who needs more helping!</p>
-  </div>
+<section class="position-relative volunteer-section overflow-hidden">
 
-<div class="container mb-5">
-  <div class="volunteer-grid">
-    <!-- Volunteer 1 -->
-    <div class="volunteer-card">
-      <img src="./images/pro-img.webp" alt="Volunteer 1">
-    </div>
-    <!-- Volunteer 2 -->
-    <div class="volunteer-card">
-      <img src="./images/prof-2.jpeg" alt="Volunteer 2">
-    </div>
-    <!-- Volunteer 3 -->
-    <div class="volunteer-card">
-      <img src="./images/prof-3.jpg" alt="Volunteer 3">
-    </div>
-    <!-- Volunteer 4 -->
-    <div class="volunteer-card">
-      <img src="./images/prof-4.jpg" alt="Volunteer 4">
-    </div>
-  </div>
-</div>
+  <!-- Left Shape -->
+  <div class="volu-left-bg-shape"></div>
 
+  <!-- Right Shape -->
+  <div class="volu-right-circle-shape"></div>
 
-<!-- Right Side: Text & Button -->
-    <div class="row align-items-center mt-5">
-      <div class="col-lg-6 offset-lg-6 bg-warning-subtle p-4 rounded-start">
-        <h5 class="fw-bold">Become a Volunteer?</h5>
-        <h6 class="fw-semibold mb-3">Join your hand with us for a better life and beautiful future.</h6>
-        <p class="text-muted">The secret to happiness lies in helping others. Never underestimate the difference YOU can make in the lives of the poor, the abused and the helpless.</p>
-        <ul class="list-unstyled text-start small">
-          <li>✔️ We are friendly to each other.</li>
-          <li>✔️ If you join with us, we will give you free training.</li>
-          <li>✔️ It’s an opportunity to help poor children.</li>
-          <li>✔️ No goal requirements.</li>
-          <li>✔️ Joining is totally free. We don’t need any money from you.</li>
+  <!-- Main Content -->
+  <div class="container-xxl py-5 position-relative" style="z-index: 1;">
+    <div class="text-center mb-5">
+      <h3 class="text-center">Meet Our Volunteers</h3>
+      <p class="text-muted fs-5 fw-semibold">
+        Help today because tomorrow you may be the one who <br />
+        needs more helping!
+      </p>
+    </div>
+
+    <div class="row">
+      <!-- Volunteer Images -->
+      <div class="col-md-6">
+        <div class="row g-4">
+          <div class="col-6">
+            <div class="volunteer-wrapper">
+              <img src="https://html.dynamiclayers.net/dl/charitify/img/team-1.jpg" class="img-fluid" />
+              <div class="volunteer-overlay">
+                <div class="volunteer-info">Jonathan Smith<br><span>Communicator</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6">
+            <div class="volunteer-wrapper">
+              <img src="https://html.dynamiclayers.net/dl/charitify/img/team-2.jpg" class="img-fluid" />
+              <div class="volunteer-overlay">
+                <div class="volunteer-info">Angelina Rose<br><span>Certified Reader</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6">
+            <div class="volunteer-wrapper">
+              <img src="https://html.dynamiclayers.net/dl/charitify/img/team-3.jpg" class="img-fluid" />
+              <div class="volunteer-overlay">
+                <div class="volunteer-info">Taylor Swift<br><span>Event Creator</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6">
+            <div class="volunteer-wrapper">
+              <img src="https://html.dynamiclayers.net/dl/charitify/img/team-4.jpg" class="img-fluid" />
+              <div class="volunteer-overlay">
+                <div class="volunteer-info">Michel Brown<br><span>Internet Specialist</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column Text -->
+      <div class="col-md-6 py-3">
+        <h2 class="volunteer-heading">Become a Volunteer?</h2>
+        <h5 class="mb-3">Join your hand with us for a better life and beautiful future.</h5>
+        <p>The secret to happiness lies in helping others. Never underestimate the difference YOU can make in the lives of the poor, the abused, and the helpless.</p>
+        <ul class="volunteer-list mb-4">
+          <li>We are friendly to each other.</li>
+          <li>If you join with us, we will give you free training.</li>
+          <li>It’s an opportunity to help poor children.</li>
+          <li>No goal requirements.</li>
+          <li>Joining is totally free. We don’t need any money from you.</li>
         </ul>
-        <a href="#" class="btn btn-warning text-white fw-semibold px-4">Join With Us</a>
+        <a href="#" class="btn btn-primary btn-sm px-3">Join With Us</a>
       </div>
     </div>
   </div>
-
-  <!-- Decorative semi-circle (bottom right) -->
-  <div class="position-absolute bottom-0 end-0 w-50 h-50 bg-warning rounded-top-start" style="z-index: 0; border-top-left-radius: 100% !important;"></div>
-
-  <!-- Decorative semi-circle (bottom right) -->
-  <div class="position-absolute bottom-0 end-0 w-50 h-50 bg-warning rounded-top-start" style="z-index: 0; border-top-left-radius: 100% !important;"></div>
 </section>
+
+<!--Section Banner-->
+
+ <section class="counters-section text-center">
+    <div class="container-xxl">
+      <div class="row g-4 d-flex align-items-center">
+        <!-- Counter 1 -->
+        <div class="col-6 col-md-3 py-5 fw-bold display-6">
+          <i class="fa-solid fa-dollar-sign counter-icon text-light"></i>
+          <div class="counter-number">85389</div>
+          <div class="counter-label text-light display-3 fw-bold">Money Donated</div>
+        </div>
+  <!-- Counter 2 -->
+        <div class="col-6 col-md-3 py-5 display-6 fw-bolder">
+          <i class="fa-solid fa-smile counter-icon text-light"></i>
+          <div class="counter-number">10693</div>
+          <div class="counter-label text-light">Volunteers Around The World</div>
+        </div>
+<!-- Counter 3 -->
+        <div class="col-6 col-md-3 py-5 display-6 fw-bold">
+          <i class="fa-solid fa-user counter-icon text-light"></i>
+          <div class="counter-number">50177</div>
+          <div class="counter-label text-light">People Impacted</div>
+        </div>
+<!-- Counter 4 -->
+        <div class="col-6 col-md-3 py-5 fw-bold display-6">
+          <i class="fa-solid fa-comment counter-icon text-light"></i>
+          <div class="counter-number">669</div>
+          <div class="counter-label text-light">Positive Feedbacks</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <!------UpComing Events Section------>
+<section>
+  <div class="container-xxl py-5">
+  <div id="event" class="container-event">
+    <h3 class="fw-bold text-center ">Upcoming Events</h3>
+    <div class="fw-bold display-2 text-warning px-3 text-center"></div>
+     <p class="text-center mb-2 fw-semibold mb-5">Help today because tomorrow you may be the one who<br>needs more helping!</p>
+        <div class="d-flex justify-content-center">
+     <div class="d-flex align-items-center">
+           <a class="page-link p-3 bg-warning text-muted"><i class="fa-solid fa-arrow-left"></i></a> 
+        </div>
+        <div class="about-card col-md-4 mb-4 d-flex gap-2" style="width: 50%; height: 400px !important;">
+<div>
+          <img src="./images/events-1.jpg" alt="history" class="card-img-top" style="width: 350px; margin-right: 20px; height: 400px !important; ">
+        </div>
+          <div class="about-card-body d-flex-col align-items-center">
+            <h5 class="card-title fw-bold fs-2">Let's talk about the <br>poor children.</h5>
+            <a href="#" class="text-muted">started 12:00pm <br> Grand mall, Dubai 2100.</a>
+            <p class="card-text text-muted fs-5 fw-semibold py-2">
+              The secret to happiness lies in <br> helping others.YOU can make<br> in the lives of the poor.
+            </p>
+            <button class="btn read-more px-5 py-3 ">Read More</button>
+          </div>
+        </div>
+  <div class="about-card col-md-4 mb-4 d-flex gap-2" style="width: 50%; height: 400px !important;">
+        <div>
+          <img src="./images/events-2.jpg" alt="history" class="card-img-top" style="width: 350px; margin-right: 20px; height: 400px !important; ">
+        </div>
+          <div class="about-card-body d-flex-col align-items-center">
+            <h5 class="card-title fw-bold">Let's talk about the <br>poor children.</h5>
+            <a href="#" class="text-muted">started 12:00pm <br> Grand mall, Dubai 2100.</a>
+       <p class="card-text text-muted fs-5 fw-semibold py-2">
+              The secret to happiness lies in helping others. <br> YOU can make in the lives of the poor.
+            </p>
+            <button class="btn read-more px-5 py-3 ">Read More</button>
+          </div>
+        </div>
+        <div class="d-flex align-items-center">
+            <a class="page-link p-3 bg-warning text-muted" href="#"><i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+    </section>
+
+
+
+
 
 
 

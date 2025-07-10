@@ -40,7 +40,7 @@ body {
     position: sticky;
     top: 0;
     right: 0;
-    z-index: 2;
+    z-index: 1000;
    }
 
 /* Hero Slide Styles */
@@ -320,7 +320,7 @@ body {
 }
 
 .volunteer-info {
-  color: rgb(90, 130, 238);
+  color: rgb(15, 49, 139);
   font-weight: bold;
   text-align: center;
 }

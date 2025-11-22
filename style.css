@@ -622,7 +622,11 @@ body {
 
 #about,
 #causes,
-#event{
+#event,
+#pages,
+#blog, 
+#contact,
+#donate{
   background-image: url('https://html.dynamiclayers.net/dl/charitify/img/page-header-bg.jpg');
    background-repeat: no-repeat;
    background-size: cover;
@@ -699,3 +703,32 @@ body {
   text-decoration: underline;
 }
 
+.contact-hero {
+   background-image: url('https://html.dynamiclayers.net/dl/charitify/img/page-header-bg.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   
+  position: relative;
+  z-index: 1;
+  min-height: 40vh; /* Adjust height as needed */
+  display: flex;
+  align-items: center;
+}
+
+.contact-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.55); /* dark overlay */
+}
+
+.contact-hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+@media (max-width: 768px) {
+  .contact-hero {
+    height: 40vh;
+  }
+}
